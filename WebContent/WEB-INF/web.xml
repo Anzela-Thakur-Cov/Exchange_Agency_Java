@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+		http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Exchange Agency Web Application</display-name>
+
+	<context-param>
+		<param-name>jdbcURL</param-name>
+		<param-value>jdbc:mysql://localhost:3306/userdb</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>jdbcUsername</param-name>
+		<param-value>root</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>jdbcPassword</param-name>
+		<param-value>root</param-value>
+	</context-param>
+
+
+
+	<servlet>
+		<servlet-name>ControllerServlet</servlet-name>
+		<servlet-class>com.mycoventry.projects.exchangeagency.ControllerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ControllerServlet</servlet-name>
+		<url-pattern>/ItemList</url-pattern>
+		 <url-pattern>/insert</url-pattern>
+    	<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	  <servlet>
+        <servlet-name>ImageServlet</servlet-name>
+        <servlet-class>com.mycoventry.projects.exchangeagency.ImageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ImageServlet</servlet-name>
+        <url-pattern>/imageServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>ProductDetailsServlet</servlet-name>
+    <servlet-class>com.mycoventry.projects.exchangeagency.ProductDetailsServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+    <servlet-name>ProductDetailsServlet</servlet-name>
+    <url-pattern>/productDetails</url-pattern>
+	</servlet-mapping>
+    
+    <servlet>
+		<servlet-name>SignInServlet</servlet-name>
+		<servlet-class>com.mycoventry.projects.exchangeagency.SignInServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SignInServlet</servlet-name>
+		<url-pattern>/SignInServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+    <servlet>
+        <servlet-name>PredictCategoryServlet</servlet-name>
+        <servlet-class>com.mycoventry.projects.exchangeagency.PredictCategoryServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PredictCategoryServlet</servlet-name>
+        <url-pattern>/PredictCategoryServlet</url-pattern>
+    </servlet-mapping>
+
+	
+	
+	
+	
+	
+	
+      <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>com.mycoventry.projects.exchangeagency.HomeServlet</servlet-class>
+    </servlet>
+   
+
+
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+         <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.mycoventry.projects.exchangeagency.UploadServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/upload</url-pattern>
+</servlet-mapping>
+   
+   
+   <servlet>
+        <servlet-name>InterestedServlet</servlet-name>
+        <servlet-class>com.mycoventry.projects.exchangeagency.InterestedServlet</servlet-class>
+    </servlet>
+   
+        <servlet-mapping>
+        <servlet-name>InterestedServlet</servlet-name>
+        <url-pattern>/interested</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>DeleteInterestedItemServlet</servlet-name>
+    <servlet-class>com.mycoventry.projects.exchangeagency.DeleteInterestedItemServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteInterestedItemServlet</servlet-name>
+    <url-pattern>/deleteInterestedItem</url-pattern>
+</servlet-mapping>
+    
+    
+ 
+   
+    
+
+	<error-page id="idvalue0">
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/Error.jsp</location>
+	</error-page>
+</web-app>

@@ -1,0 +1,14 @@
+com\mycoventry\projects\exchangeagency\ControllerServlet.class
+com\mycoventry\projects\exchangeagency\HomeServlet.class
+com\mycoventry\projects\exchangeagency\AgencyDAO.class
+com\mycoventry\projects\exchangeagency\InterestedItem.class
+com\mycoventry\projects\exchangeagency\SignInServlet.class
+com\mycoventry\projects\exchangeagency\Agency.class
+com\mycoventry\projects\exchangeagency\InterestedItemsServlet.class
+com\mycoventry\projects\exchangeagency\UploadServlet.class
+com\mycoventry\projects\exchangeagency\PredictCategoryServlet.class
+com\mycoventry\projects\exchangeagency\ProductDetailsServlet.class
+com\mycoventry\projects\exchangeagency\DBConnection.class
+com\mycoventry\projects\exchangeagency\InterestedServlet.class
+com\mycoventry\projects\exchangeagency\ProductCategoryPredictor.class
+com\mycoventry\projects\exchangeagency\TrainModel.class
